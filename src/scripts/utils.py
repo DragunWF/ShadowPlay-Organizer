@@ -30,4 +30,4 @@ class Utils:
     def log(message: str) -> None:
         hour = Utils.format_hour(str(datetime.now()).split(" ")[1])
         Utils.__log_count += 1
-        print(f"(Log#{Utils.__log_count})[{hour}]: {message}")
+        print(f"(Log #{Utils.__log_count})[{hour}]: {message}")
