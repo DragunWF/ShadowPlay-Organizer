@@ -4,7 +4,7 @@
 
 A simple file organizer designed for categorizing screenshots and recordings into their own directories saved from NVIDIA ShadowPlay.
 
-## How to run
+## How To Run
 
 Open the terminal and navigate to this project's directory. The main `.py` script is in `src/main.py`. Run the command `python src/main.py <recordings_path_here>` shown below and pass the full path to your ShadowPlay recordings as the first and only argument to running the program.
 
@@ -12,11 +12,11 @@ Open the terminal and navigate to this project's directory. The main `.py` scrip
 python src/main.py "E:/Path/to/ShadowPlay/RecordingsAndScreenshots"
 ```
 
-## Path to recordings
+## Path To Recordings
 
 You can see your recordings path in NVIDIA ShadowPlay by following these instructions:
 
-- Press `alt+z`
+- Press `alt + z`
 - On the right side of the screen, click the gear icon leading to the settings
 - Navigate to the `Recordings` section of the settings
 
