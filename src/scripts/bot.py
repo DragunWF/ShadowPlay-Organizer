@@ -36,7 +36,7 @@ class Bot:
     def run(self, path: str) -> None:
         self.path = path
 
-        directories = os.listdir(self.path)
+        directories = tuple(filter(os.path.isdir, os.listdir(self.path)))
         for directory in directories:
             self.__validate_directory(directory)
             self.__move_files(os.listdir(directory), directory)
