@@ -4,10 +4,13 @@ from scripts.utils import Utils
 
 
 def main():
-    print("Starting automation...")
+    if len(sys.argv) < 2:
+        raise Exception("Please provide an argument!")
+
+    print("Starting automation...\n")
     bot = Bot()
-    bot.run()
-    print("Finished automation!")
+    bot.run(sys.argv[1])
+    print("Finished automation!\n")
 
 
 if __name__ == "__main__":
