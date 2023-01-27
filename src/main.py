@@ -1,4 +1,5 @@
 import sys
+import os
 from scripts.bot import Bot
 from scripts.utils import Utils
 
@@ -6,6 +7,10 @@ from scripts.utils import Utils
 def main():
     if len(sys.argv) < 2:
         raise Exception("Please provide an argument!")
+    if not os.path.exists(sys.argv[1]):
+        raise Exception("Path provided does not exist!")
+    if not os.path.isdir(sys.argv[1]):
+        raise Exception("Path provided must be a directory!")
     Utils.log(f"Path specified: {sys.argv[1]}")
 
     Utils.log("Starting automation...\n")
