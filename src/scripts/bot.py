@@ -13,7 +13,9 @@ class Bot:
         target_directories = ("Recordings", "Screenshots")
         for directory in target_directories:
             if directory in files:
-                os.mkdir(f"{self.path}/{directory}")
+                target_directory_path = f"{self.path}/{directory}"
+                os.mkdir(target_directory_path)
+                Utils.log(f"Created {target_directory_path}")
 
     def __move_files(self, files: list, current_directory: str) -> None:
         current_path = f"{self.path}/{current_directory}"
@@ -38,4 +40,4 @@ class Bot:
         for directory in directories:
             self.__validate_directory(directory)
             self.__move_files(os.listdir(directory), directory)
-            Utils.log(f"Organized {directory}!")
+            Utils.log(f"Organized {self.path}/{directory}")
