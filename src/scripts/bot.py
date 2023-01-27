@@ -9,18 +9,6 @@ class Bot:
         self.image_extensions = ("png", "jpg", "jpeg")
         self.video_extensions = ("mp4", "mov")
 
-    def __filter_file(self, file_name: str, look_for_images: bool) -> bool:
-        extension = file_name.split(".")[-1]
-        if look_for_images:
-            return extension in self.image_extensions
-        return extension in self.video_extensions
-
-    def __filter_image(self, file_name: str) -> bool:
-        return self.__filter_file(file_name, True)
-
-    def __filter_video(self, file_name: str) -> bool:
-        return self.__filter_file(file_name, False)
-
     def __validate_directory(self, files: list) -> None:
         target_directories = ("Recordings", "Screenshots")
         for directory in target_directories:
