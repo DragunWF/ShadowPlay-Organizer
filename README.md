@@ -6,7 +6,7 @@ A simple file organizer designed for categorizing screenshots and recordings int
 
 ## How to run
 
-The main `.py` script is in `src/main.py`. Pass the full path to your ShadowPlay recordings as the first and only argument to running the program.
+Open the terminal and navigate to this project's directory. The main `.py` script is in `src/main.py`. Run the command `python src/main.py <recordings_path_here>` shown below and pass the full path to your ShadowPlay recordings as the first and only argument to running the program.
 
 ```ps1
 python src/main.py "E:/Path/to/ShadowPlay/RecordingsAndScreenshots"
