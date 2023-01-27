@@ -18,8 +18,8 @@ You can see your recordings path in NVIDIA ShadowPlay by following these instruc
 
 - Press `alt+z`
 - On the right side of the screen, click the gear icon leading to the settings
-- Navigate to the `"Recordings"` section of the settings
+- Navigate to the `Recordings` section of the settings
 
-After navigating to the `"Recordings"` section of the settings, you should be able to see the exact same thing as the image shown below. The path to your recordings is the one below the `Videos` option as highligted in the image below with a red rectangle.
+After navigating to the `Recordings` section of the settings, you should be able to see the exact same thing as the image shown below. The path to your recordings is the one below the `Videos` option as highligted in the image below with a red rectangle.
 
 ![Picture of recording settings in ShadowPlay](img/settings.png)
